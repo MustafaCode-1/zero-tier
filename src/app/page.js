@@ -8,7 +8,8 @@ export default function Home() {
   return (
     <>
       <main className={styles.main}>
-        <h1 className={styles.heading}>
+      <div className={styles.mainContent}>
+      <h1 className={styles.heading}>
           Securely connect any device, anywhere.
         </h1>
         <p className={styles.text}>
@@ -21,6 +22,7 @@ export default function Home() {
           <button className="nav-button">Get ZeroTier</button>
           <button className={styles.mainButton}>Learn more </button>
         </div>
+      </div>
       </main>
       <Features />
       <QuotePage />
