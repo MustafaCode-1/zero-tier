@@ -43,23 +43,23 @@ function Nav() {
             </div>
             <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
               <li>
-                <Link href="/features">Features</Link>
+                <Link href="/features" onClick={() => setMenuOpen(false)}>Features</Link>
               </li>
               <li>
-                <Link href="prices">Pricing</Link>
+                <Link href="prices" onClick={() => setMenuOpen(false)}>Pricing</Link>
               </li>
               <li>
-                <Link href="quotes">Download</Link>
+                <Link href="quotes" onClick={() => setMenuOpen(false)}>Download</Link>
               </li>
               <li>
-                <Link href="networks">Company</Link>
+                <Link href="networks" onClick={() => setMenuOpen(false)}>Company</Link>
               </li>
               <li>
-                <Link href="#">Support</Link>
+                <Link href="#" onClick={() => setMenuOpen(false)}>Support</Link>
               </li>
               <li>
               {menuOpen ? (
-                <Link href="#" >Login</Link>
+                <Link href="#" onClick={() => setMenuOpen(false)}>Login</Link>
               ) : (
                 <Link href="#" className="nav-login-btn">
                   Login
